@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+print(pickle.format_version)
 
 # Load the model and scaler
 model = pickle.load(open('models/modelForPrediction.pkl', 'rb'))
