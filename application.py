@@ -8,7 +8,8 @@ model = pickle.load(open('models/modelForPrediction.pkl', 'rb'))
 scaler = pickle.load(open('models/standard_scaler.pkl', 'rb'))
 
 # Initialize Flask app
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 @app.route('/')
 def home():
